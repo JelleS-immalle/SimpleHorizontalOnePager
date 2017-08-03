@@ -1,8 +1,14 @@
+body, html { 
+    overflow-x: hidden; 
+    overflow-y: hidden;
+}
+
 #header{
+	transition: 1.5s;
 	border-radius: 0.65em;
 	margin: auto;
-	width: 90%;
-	height: 7em;
+	width: 100%;
+	height: 10em;
 	vertical-align: auto;
 	background-image: url('img/header-landscape.png');
 	background-size: 200% 200%;
@@ -14,10 +20,17 @@
 }
 
 #header > h1{
+	transition: 0.5s;
 	font-family: 'Bowlby One SC';
 	font-weight: lighter;
-	color: #111;
+	color: #4D4D4D;
 	text-shadow: 0.03em 0.02em #98B4D1;
+}
+
+#header:hover, #header > h1:hover{
+	transition: 1.5s;
+	text-shadow: 0.03em 0.02em #FFD4B8;
+	background-size: 200% 210%;
 }
 
 #menu{
@@ -28,48 +41,150 @@
 }
 
 .firstItem{
+	transition: .5s;
 	position: absolute;
 	height: 15em;
-	width: 25%;
-	background-color: yellow;
-	z-index: 4;
+	width: 24.5%;
+	background-color: #6B89A8;
+	z-index: 2;
+	border-radius: 0.65em;
 }
 
-.secondItem{
+.firstItem > img{
+	padding: 0.5em;
 	position: absolute;
-	height: 15em;
-	width: 50%;
-	background-color: green;
+	right: 0;
+	max-height: 13.9em;
+	max-width: 13.9em;
+}
+
+.firstItem:hover{
+	transition: 1.5s;
+	width: 100%;
 	z-index: 3;
 }
 
+.textLeft{
+	visibility: hidden;
+	width: 73%;
+	position: absolute;
+	left: 0;
+	font-family: 'PT Sans';
+	font-size: 2em;
+	color: #98B4D1;
+	margin: auto;
+}
+
+.firstItem:hover .textLeft{
+	visibility: visible;
+}
+
+.secondItem{
+	transition: .5s;
+	position: absolute;
+	height: 15em;
+	width: 49.5%;
+	background-color: #FFD4B8;
+	z-index: 1;
+	border-radius: 0.65em;
+}
+
 .secondItem > img{
+	padding: 0.5em;
+	position: absolute;
+	right: 0;
+	max-height: 13.9em;
+	max-width: 13.9em;
+}
+
+.secondItem:hover{
+	transition: 1.5s;
+	width: 100%;
+	z-index: 3;
+}
+
+.secondItem:hover .textLeft{
+	visibility: visible;
 }
 
 .thirdItem{
+	transition: .5s;
 	position: absolute;
+	right: 0;
 	height: 15em;
-	width: 75%;
-	background-color: red;
-	z-index: 2;
+	width: 49.5%;
+	background-color: #FFD4B8;
+	z-index: 1;
+	border-radius: 0.65em;
+}
+
+.thirdItem > img{
+	padding: 0.5em;
+	position: absolute;
+	left: 0;
+	max-height: 13.9em;
+	max-width: 13.9em;
+}
+
+.thirdItem:hover{
+	transition: 1.5s;
+	width: 100%;
+	z-index: 3;
+}
+
+.textRight{
+	visibility: hidden;
+	width: 73%;
+	position: absolute;
+	right: 0;
+	font-family: 'PT Sans';
+	font-size: 2em;
+	color: #98B4D1;
+	margin: auto;
+}
+
+.thirdItem:hover .textRight{
+	visibility: visible;
 }
 
 .fourthItem{
+	transition: .5s;
 	position: absolute;
+	right: 0;
 	height: 15em;
+	width: 24.5%;
+	background-color: #6B89A8;
+	z-index: 2;
+	border-radius: 0.65em;
+}
+
+.fourthItem > img{
+	padding: 0.5em;
+	position: absolute;
+	left: 0;
+	max-height: 13.9em;
+	max-width: 13.9em;
+}
+
+.fourthItem:hover{
+	transition: 1.5s;
 	width: 100%;
-	background-color: purple;
-	z-index: 1;
+	z-index: 3;
+	visibility: visible;
+}
+
+.fourthItem:hover .textRight{
+	visibility: visible;
 }
 
 #footer{
 	border-radius: 0.65em;
 	margin: auto;
-	width: 60%;
-	height: 3.5em;
+	width: 100%;
+	height: 12em;
 	vertical-align: auto;
-	background-color: grey;
-	font-size: 0.5em;
+	background-color: #6B89A8;
+	font-size: 1em;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -78,11 +193,11 @@
 #footer > h1{
 	font-family: 'Bowlby One SC';
 	font-weight: lighter;
-	color: #111;
+	color: #3D3D3D;
 	text-shadow: 0.02em 0.03em #98B4D1;
 }
 
 #footer > h1 > a{
-	color: #111;
+	color: inherit;
 	text-decoration: none;
 }
