@@ -1,0 +1,88 @@
+#header{
+	border-radius: 0.65em;
+	margin: auto;
+	width: 90%;
+	height: 7em;
+	vertical-align: auto;
+	background-image: url('img/header-landscape.png');
+	background-size: 200% 200%;
+	background-repeat: none;
+	font-size: 3em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#header > h1{
+	font-family: 'Bowlby One SC';
+	font-weight: lighter;
+	color: #111;
+	text-shadow: 0.03em 0.02em #98B4D1;
+}
+
+#menu{
+	margin: 1em 0em;
+	position: relative;
+	height: 15em;
+	width: 100%;
+}
+
+.firstItem{
+	position: absolute;
+	height: 15em;
+	width: 25%;
+	background-color: yellow;
+	z-index: 4;
+}
+
+.secondItem{
+	position: absolute;
+	height: 15em;
+	width: 50%;
+	background-color: green;
+	z-index: 3;
+}
+
+.secondItem > img{
+}
+
+.thirdItem{
+	position: absolute;
+	height: 15em;
+	width: 75%;
+	background-color: red;
+	z-index: 2;
+}
+
+.fourthItem{
+	position: absolute;
+	height: 15em;
+	width: 100%;
+	background-color: purple;
+	z-index: 1;
+}
+
+#footer{
+	border-radius: 0.65em;
+	margin: auto;
+	width: 60%;
+	height: 3.5em;
+	vertical-align: auto;
+	background-color: grey;
+	font-size: 0.5em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#footer > h1{
+	font-family: 'Bowlby One SC';
+	font-weight: lighter;
+	color: #111;
+	text-shadow: 0.02em 0.03em #98B4D1;
+}
+
+#footer > h1 > a{
+	color: #111;
+	text-decoration: none;
+}
